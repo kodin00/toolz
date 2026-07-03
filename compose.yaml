@@ -6,8 +6,8 @@ services:
     build:
       context: .
       target: runtime
-    ports:
-      - "${TOOLROOM_PORT:-8080}:8080"
+    expose:
+      - "8080"
     restart: unless-stopped
     read_only: true
     tmpfs:

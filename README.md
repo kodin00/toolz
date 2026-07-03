@@ -16,16 +16,13 @@ Create a production build with `npm run build`.
 Build and start the production container:
 
 ```bash
-docker compose up --build
+docker compose up -d --build
 ```
 
-Open <http://localhost:8080>. To use a different host port:
+The app listens on container port `8080` without publishing a host port.
+Networking outside this Compose project can be managed separately.
 
-```bash
-TOOLROOM_PORT=3000 docker compose up --build
-```
-
-Stop and remove the container with `docker compose down`.
+Stop and remove the app container with `docker compose down`.
 
 ## Add, edit, or remove a tool
 
