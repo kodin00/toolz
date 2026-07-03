@@ -6,8 +6,8 @@ services:
     build:
       context: .
       target: runtime
-    expose:
-      - "8080"
+    ports:
+      - "3011:8080"
     restart: unless-stopped
     read_only: true
     tmpfs:

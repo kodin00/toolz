@@ -19,8 +19,8 @@ Build and start the production container:
 docker compose up -d --build
 ```
 
-The app listens on container port `8080` without publishing a host port.
-Networking outside this Compose project can be managed separately.
+Open <http://localhost:3011>. Compose publishes host port `3011` to container
+port `8080`.
 
 Stop and remove the app container with `docker compose down`.
 
