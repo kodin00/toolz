@@ -11,6 +11,22 @@ npm run dev
 
 Create a production build with `npm run build`.
 
+## Run with Docker Compose
+
+Build and start the production container:
+
+```bash
+docker compose up --build
+```
+
+Open <http://localhost:8080>. To use a different host port:
+
+```bash
+TOOLROOM_PORT=3000 docker compose up --build
+```
+
+Stop and remove the container with `docker compose down`.
+
 ## Add, edit, or remove a tool
 
 Each tool is isolated in `src/tools/<tool-name>`. The shell only knows about the
