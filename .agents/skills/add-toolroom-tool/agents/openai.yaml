@@ -1,0 +1,4 @@
+interface:
+  display_name: "Add Toolroom Tool"
+  short_description: "Build utilities that fit Toolroom automatically"
+  default_prompt: "Use $add-toolroom-tool to add a polished local-first utility to Toolroom."

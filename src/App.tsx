@@ -177,7 +177,7 @@ export default function App() {
               <Icon name="back" size={18} />
               All tools
             </button>
-            <span className="tool-breadcrumb">Image utilities <Icon name="chevron" size={13} /> {activeTool.name}</span>
+            <span className="tool-breadcrumb">{activeTool.category} utilities <Icon name="chevron" size={13} /> {activeTool.name}</span>
           </header>
           <ActiveTool />
         </main>
